@@ -23,7 +23,7 @@ for item in range(total):
         search = fun.ebay_search(item,file_soup,EBAY_API_KEY)
         item_dict[item]=search #assigns a the value of (search) to the (item_dict) dictionary 
         item_dict[item]['name']= fun.get_title(item,file_soup) # assigns the title  to an element of item_dict
-        #item_dict[item]['govd_url'] = get_url(item,file_soup)
+        #item_dict[item]['govd_url'] = fun.get_url(item,file_soup)
         print('\033[32m' 'Done')
         
     
